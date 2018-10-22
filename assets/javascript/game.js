@@ -1,28 +1,49 @@
+
+
 var Game = {
-    hasWon: false, 
-
-    chooseEnemy : function () {
-
-    }
-
+    GameOver: false, 
+    playerSelected: false,
+    currentDefender: null,
+    currentEnemy: null
 }
 
-var Fighter = {
-    numHealthPoints: 0,
-    numCounterAttackPoints: 0,
-    isDead: false,
-
-    counterAttack : function() {   
-    
+characters = {
+    luke: {
+        name: "luke",
+        displayName: "Luke Skywalker",
+        index: 1,
+        hp: 100,
+        attackPower: 20,
+        couterAttackPower: 10,
+        isDead: false
+    },
+    han: {
+        name: "han",
+        displayName: "Han Solo",
+        index: 2,
+        hp: 80,
+        attackPower: 30,
+        couterAttackPower: 20,   
+        isDead: false
+    },    
+    vader: {
+        name: "vader",
+        displayName: "Darth Vader",
+        index: 3,
+        hp: 200,
+        attackPower: 50,
+        couterAttackPower: 40,
+        isDead: false
+    },
+    mal: {
+        name: "mal",
+        displayName: "Darth Mal",
+        index: 4,
+        hp: 120,
+        attackPower: 40,
+        couterAttackPower: 25,
+        isDead: false
     }
 }
 
-var Defender = {
-    numHealthPoints: 0,
-    numAttackPoints: 0,
-    isDead: false,
-    
-    attack : function() {
-
-    }
-}
+// currentEnemy = characters[selectEnemy]

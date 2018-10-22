@@ -7,5 +7,21 @@ body {
 
 .player {
     color:white;
+}
 
+#userSelectedMsg {
+    font-family: 'VT323', monospace;
+    font-size: 24px;
+    color: darkred;
+}
+
+.selectEnemyMsg {
+    font-family: 'VT323', monospace;
+    font-size: 24px;
+    color: darkgrey;
+}
+
+.enemyDefeated {
+    visibility: hidden;
+    
 }
